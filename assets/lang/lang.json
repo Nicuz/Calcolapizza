@@ -1,0 +1,174 @@
+{
+    "doughBallsNumber": {
+        "en": "Dough balls number",
+        "it": "Numero panielli"
+    },
+    "doughBallsWeight": {
+        "en": "Dough balls weight (grams)",
+        "it": "Peso panielli (grammi)"
+    },
+    "doughHydration": {
+        "en": "Hydration",
+        "it": "Idratazione"
+    },
+    "saltPerLiter": {
+        "en": "Salt",
+        "it": "Sale"
+    },
+    "fatsPerLiter": {
+        "en": "Oil/lard/butter",
+        "it": "Olio/strutto/burro"
+    },
+    "roomTemperature": {
+        "en": "Room temperature",
+        "it": "Temperatura ambiente"
+    },
+    "risingTime": {
+        "en": "Rising time",
+        "it": "Ore di lievitazione"
+    },
+    "fridgeRisingTime": {
+        "en": "Fridge rising time",
+        "it": "Ore in frigo"
+    },
+    "grandmaPizza": {
+        "en": "Grandma pizza",
+        "it": "Pizza in teglia"
+    },
+    "calculateRecipe": {
+        "en": "Calculate recipe",
+        "it": "Calcola dosi"
+    },
+    "invalidValue": {
+        "en": "Invalid value. Insert a number!",
+        "it": "Valore non valido. Inserisci un numero!"
+    },
+    "dosagesTitle": {
+        "en": "Here is your recipe!",
+        "it": "Ecco la tua ricetta!"
+    },
+    "doughBallSingular": {
+        "en": "dough ball",
+        "it": "paniello"
+    },
+    "doughBallPlural": {
+        "en": "dough balls",
+        "it": "panielli"
+    },
+    "flour": {
+        "en": "Flour",
+        "it": "Farina"
+    },
+    "water": {
+        "en": "Water",
+        "it": "Acqua"
+    },
+    "yeast": {
+        "en": "Yeast",
+        "it": "Lievito"
+    },
+    "fresh": {
+        "en": "fresh",
+        "it": "fresco"
+    },
+    "dry": {
+        "en": "dry",
+        "it": "secco"
+    },
+    "totalRisingTime": {
+        "en": "Total rising time",
+        "it": "Ore di lievitazione totali"
+    },
+    "yes": {
+        "en": "Yes",
+        "it": "Sì"
+    },
+    "no": {
+        "en": "No",
+        "it": "No"
+    },
+    "saveDialogTitle": {
+        "en": "We are almost done!",
+        "it": "Ci siamo quasi!"
+    },
+    "saveDialogTextfieldHint": {
+        "en": "Dough name",
+        "it": "Nome impasto"
+    },
+    "requiredField": {
+        "en": "Required field",
+        "it": "Campo obbligatorio"
+    },
+    "save": {
+        "en": "Save",
+        "it": "Salva"
+    },
+    "saveDialogSuccess": {
+        "en": "Dough saved",
+        "it": "Impasto salvato correttamente"
+    },
+    "deleteDialogTitle": {
+        "en": "Are you sure?",
+        "it": "Sei sicuro?"
+    },
+    "deleteDialogMessage": {
+        "en": "The saved dough will be deleted.",
+        "it": "Questa operazione cancellerà l'impasto salvato."
+    },
+    "cancel": {
+        "en": "Cancel",
+        "it": "Annulla"
+    },
+    "ok": {
+        "en": "Ok",
+        "it": "Ok"
+    },
+    "deleteDialogSuccess": {
+        "en": "Dough deleted",
+        "it": "Impasto eliminato correttamente"
+    },
+    "savedDoughsTab": {
+        "en": "Saved doughs",
+        "it": "Impasti salvati"
+    },
+    "noDoughsSaved": {
+        "en": "No doughs saved",
+        "it": "Nessun impasto salvato"
+    },
+    "aboutTab": {
+        "en": "About",
+        "it": "Info"
+    },
+    "aboutTabDescription1": {
+        "en": "Calcolapizza lets you calculate the exact recipe for your pizza doughs in a few seconds, you can also save them for future use. This is a smartphone version of the homonymous tool by the forum",
+        "it": "Calcolapizza vi permetterà di calcolare in pochissimi secondi le dosi esatte per i vostri impasti e salvarle per poterle riutilizzare in seguito. Questa non è altro che una versione riadattata per smartphone dell'omonimo strumento ufficiale del forum"
+    },
+    "aboutTabDescription2": {
+        "en": "every credits go to them",
+        "it": "ogni merito va a loro"
+    },
+    "aboutTabDescription3": {
+        "en": "This is an ad supported app, read the",
+        "it": "L'app è supportata da ads, leggi la"
+    },
+    "privacyPolicy": {
+        "en": "Privacy Policy",
+        "it": "Normativa sulla privacy"
+    },
+    "appInfo": {
+        "en": "App info",
+        "it": "Info sull'app"
+    },
+    "version": {
+        "en": "Version",
+        "it": "Versione"
+    },
+    "author": {
+        "en": "Author",
+        "it": "Autore"
+    },
+    "contactMe": {
+        "en": "Contact me",
+        "it": "Contattami"
+    }
+}
