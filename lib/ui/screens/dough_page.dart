@@ -61,7 +61,7 @@ class DoughPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  AppLocalizations.of(context).translate("dosagesTitle"),
+                  AppLocalizations.of(context).translate("recipeTitle"),
                   style: TextStyle(
                     fontSize: 30.0,
                     fontWeight: FontWeight.bold,

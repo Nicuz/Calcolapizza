@@ -7,6 +7,8 @@ import 'package:calcolapizza/ui/widgets/title_slider.dart';
 import 'package:calcolapizza/ui/widgets/title_textfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
 class CalcolapizzaPage extends StatelessWidget {
@@ -157,17 +159,40 @@ class CalcolapizzaPage extends StatelessWidget {
                     elevation: 15,
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      child: Column(
                         children: <Widget>[
-                          Text(AppLocalizations.of(context)
-                              .translate("grandmaPizza")),
-                          Switch(
-                            value: calcolapizzaProvider.isGrandmaPizza,
-                            activeColor: Colors.deepOrange,
-                            onChanged: (bool value) {
-                              calcolapizzaProvider.setIsGrandmaPizza = value;
-                            },
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text(AppLocalizations.of(context)
+                                  .translate("grandmaPizza")),
+                              Switch(
+                                value: calcolapizzaProvider.isGrandmaPizza,
+                                activeColor: Colors.deepOrange,
+                                onChanged: (bool value) {
+                                  calcolapizzaProvider.setIsGrandmaPizza =
+                                      value;
+                                },
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Icon(
+                                FontAwesomeIcons.infoCircle,
+                                color: Colors.deepOrange,
+                              ),
+                              SizedBox(width: 10),
+                              Flexible(
+                                child: Text(
+                                  AppLocalizations.of(context)
+                                      .translate("grandmaPizzaHint"),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),

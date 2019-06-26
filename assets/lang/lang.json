@@ -35,15 +35,19 @@
         "en": "Grandma pizza",
         "it": "Pizza in teglia"
     },
+    "grandmaPizzaHint": {
+        "en": "Leave disabled if you're going to make the classic round pizza",
+        "it": "Lascia disabilitato se vuoi fare la classica pizza tonda"
+    },
     "calculateRecipe": {
         "en": "Calculate recipe",
         "it": "Calcola dosi"
     },
     "invalidValue": {
-        "en": "Invalid value. Insert a number!",
-        "it": "Valore non valido. Inserisci un numero!"
+        "en": "Error. Enter a positive number!",
+        "it": "Errore. Inserisci un numero positivo!"
     },
-    "dosagesTitle": {
+    "recipeTitle": {
         "en": "Here is your recipe!",
         "it": "Ecco la tua ricetta!"
     },
@@ -104,7 +108,7 @@
         "it": "Salva"
     },
     "saveDialogSuccess": {
-        "en": "Dough saved",
+        "en": "Dough recipe saved",
         "it": "Impasto salvato correttamente"
     },
     "deleteDialogTitle": {
@@ -112,7 +116,7 @@
         "it": "Sei sicuro?"
     },
     "deleteDialogMessage": {
-        "en": "The saved dough will be deleted.",
+        "en": "The saved dough recipe will be deleted.",
         "it": "Questa operazione cancellerà l'impasto salvato."
     },
     "cancel": {
@@ -140,11 +144,11 @@
         "it": "Info"
     },
     "aboutTabDescription1": {
-        "en": "Calcolapizza lets you calculate the exact recipe for your pizza doughs in a few seconds, you can also save them for future use. This is a smartphone version of the homonymous tool by the forum",
+        "en": "Calcolapizza will allow you to calculate the exact amount for your pizza doughs in a few seconds and to save it for future use. This is a smartphone version of the homonymous tool by the forum",
         "it": "Calcolapizza vi permetterà di calcolare in pochissimi secondi le dosi esatte per i vostri impasti e salvarle per poterle riutilizzare in seguito. Questa non è altro che una versione riadattata per smartphone dell'omonimo strumento ufficiale del forum"
     },
     "aboutTabDescription2": {
-        "en": "every credits go to them",
+        "en": "all the credit goes to them",
         "it": "ogni merito va a loro"
     },
     "aboutTabDescription3": {
