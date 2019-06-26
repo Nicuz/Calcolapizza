@@ -26,10 +26,11 @@ class TitleTextField extends StatelessWidget {
                 hintText: this.title,
               ),
               controller: this.fieldValue,
-              validator: (String input) =>
-                  input.trim().isEmpty || int.tryParse(input) == null
-                      ? this.error
-                      : null,
+              validator: (String input) => input.trim().isEmpty ||
+                      int.tryParse(input) == null ||
+                      int.tryParse(input) < 0
+                  ? this.error
+                  : null,
             ),
           ),
         ),
