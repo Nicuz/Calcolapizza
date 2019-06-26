@@ -33,6 +33,7 @@ class Calcolapizza extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        title: "Calcolapizza",
         theme: ThemeData.light().copyWith(
             appBarTheme: AppBarTheme(
           color: Colors.transparent,
