@@ -25,7 +25,7 @@ class TitleSlider extends StatelessWidget {
         Card(
           elevation: 15.0,
           child: Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.symmetric(vertical: 20),
             child: Column(
               children: <Widget>[
                 Row(
