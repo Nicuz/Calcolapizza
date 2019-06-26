@@ -13,7 +13,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
     
-  cuberto_bottom_bar: ^0.0.2
+  bubble_bottom_bar: ^1.2.0
   cupertino_icons: ^0.1.2
   facebook_audience_network: ^0.3.3
   flushbar: 1.5.3
