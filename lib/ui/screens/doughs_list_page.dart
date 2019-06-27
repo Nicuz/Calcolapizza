@@ -37,6 +37,7 @@ class DoughsListPage extends StatelessWidget {
                     SizedBox(height: 20),
                     Expanded(
                       child: ListView.builder(
+                        physics: BouncingScrollPhysics(),
                         itemCount: snapshot.data.length,
                         itemBuilder: (BuildContext context, int index) {
                           Dough item = Dough.fromMap(snapshot.data[index]);

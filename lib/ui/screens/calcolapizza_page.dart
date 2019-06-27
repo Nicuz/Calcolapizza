@@ -25,6 +25,7 @@ class CalcolapizzaPage extends StatelessWidget {
         FocusScope.of(context).requestFocus(FocusNode());
       },
       child: ListView(
+        physics: BouncingScrollPhysics(),
         children: <Widget>[
           Form(
             key: _formKey,

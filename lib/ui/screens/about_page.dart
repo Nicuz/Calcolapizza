@@ -10,6 +10,7 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
       child: Container(
         margin: EdgeInsets.fromLTRB(20, 40, 20, 20),
         child: Column(

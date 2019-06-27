@@ -54,6 +54,7 @@ class DoughPage extends StatelessWidget {
         ),
       ),
       body: ListView(
+        physics: BouncingScrollPhysics(),
         children: <Widget>[
           Container(
             margin: EdgeInsets.fromLTRB(20, 0, 20, 40),
