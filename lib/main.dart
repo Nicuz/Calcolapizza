@@ -46,6 +46,7 @@ class Calcolapizza extends StatelessWidget {
         supportedLocales: [
           Locale("en", "US"),
           Locale("it", "IT"),
+          Locale("pt", "PT"),
         ],
         localizationsDelegates: [
           AppLocalizations.delegate,
