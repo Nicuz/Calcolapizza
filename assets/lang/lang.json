@@ -37,7 +37,7 @@
     "fridgeRisingTime": {
         "en": "Fridge rising time",
         "it": "Ore in frigo",
-        "pt": "Tempo de forno"
+        "pt": "Tempo na geladeira"
     },
     "grandmaPizza": {
         "en": "Grandma pizza",
@@ -178,7 +178,6 @@
         "en": "About",
         "it": "Info",
         "pt": "Sobre"
-
     },
     "aboutTabDescription1": {
         "en": "Calcolapizza will allow you to calculate the exact amount for your pizza doughs in a few seconds and to save it for future use. This is a smartphone version of the homonymous tool by the forum",
