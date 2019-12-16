@@ -1,178 +1,222 @@
 {
     "doughBallsNumber": {
         "en": "Dough balls number",
-        "it": "Numero panielli"
+        "it": "Numero panielli",
+        "pt": "Número de bolas de massa"
     },
     "doughBallsWeight": {
         "en": "Dough balls weight (grams)",
-        "it": "Peso panielli (grammi)"
+        "it": "Peso panielli (grammi)",
+        "pt": "Peso das bolas de massa (gramas)"
     },
     "doughHydration": {
         "en": "Hydration",
-        "it": "Idratazione"
+        "it": "Idratazione",
+        "pt": "Hidratação"
     },
     "saltPerLiter": {
         "en": "Salt",
-        "it": "Sale"
+        "it": "Sale",
+        "pt": "Sal"
     },
     "fatsPerLiter": {
         "en": "Oil/lard/butter",
-        "it": "Olio/strutto/burro"
+        "it": "Olio/strutto/burro",
+        "pt": "Óleo/banha/manteiga"
     },
     "roomTemperature": {
         "en": "Room temperature",
-        "it": "Temperatura ambiente"
+        "it": "Temperatura ambiente",
+        "pt": "Temperatura ambiente"
     },
     "risingTime": {
         "en": "Rising time",
-        "it": "Ore di lievitazione"
+        "it": "Ore di lievitazione",
+        "pt": "Tempo de fermentação"
     },
     "fridgeRisingTime": {
         "en": "Fridge rising time",
-        "it": "Ore in frigo"
+        "it": "Ore in frigo",
+        "pt": "Tempo na geladeira"
     },
     "grandmaPizza": {
         "en": "Grandma pizza",
-        "it": "Pizza in teglia"
+        "it": "Pizza in teglia",
+        "pt": "Pizza de forno"
     },
     "grandmaPizzaHint": {
         "en": "Leave disabled if you're going to make the classic round pizza",
-        "it": "Lascia disabilitato se vuoi fare la classica pizza tonda"
+        "it": "Lascia disabilitato se vuoi fare la classica pizza tonda",
+        "pt": "Desative se você fará a clássica pizza redonda"
     },
     "calculateRecipe": {
         "en": "Calculate recipe",
-        "it": "Calcola dosi"
+        "it": "Calcola dosi",
+        "pt": "Calcular receita"
     },
     "invalidValue": {
         "en": "Error. Enter a positive number!",
-        "it": "Errore. Inserisci un numero positivo!"
+        "it": "Errore. Inserisci un numero positivo!",
+        "pt": "Erro. Insira um número positivo!"
     },
     "recipeTitle": {
         "en": "Here is your recipe!",
-        "it": "Ecco la tua ricetta!"
+        "it": "Ecco la tua ricetta!",
+        "pt": "Aqui está a sua receita!"
     },
     "doughBallSingular": {
         "en": "dough ball",
-        "it": "paniello"
+        "it": "paniello",
+        "pt": "Bola de massa"
     },
     "doughBallPlural": {
         "en": "dough balls",
-        "it": "panielli"
+        "it": "panielli",
+        "pt": "Bolas de massa"
     },
     "flour": {
         "en": "Flour",
-        "it": "Farina"
+        "it": "Farina",
+        "pt": "Farinha"
     },
     "water": {
         "en": "Water",
-        "it": "Acqua"
+        "it": "Acqua",
+        "pt": "Água"
     },
     "yeast": {
         "en": "Yeast",
-        "it": "Lievito"
+        "it": "Lievito",
+        "pt": "Fermento"
     },
     "fresh": {
         "en": "fresh",
-        "it": "fresco"
+        "it": "fresco",
+        "pt": "Fresco"
     },
     "dry": {
         "en": "dry",
-        "it": "secco"
+        "it": "secco",
+        "pt": "Seco"
     },
     "totalRisingTime": {
         "en": "Total rising time",
-        "it": "Ore di lievitazione totali"
+        "it": "Ore di lievitazione totali",
+        "pt": "Tempo total de fermentação"
     },
     "yes": {
         "en": "Yes",
-        "it": "Sì"
+        "it": "Sì",
+        "pt": "Sim"
     },
     "no": {
         "en": "No",
-        "it": "No"
+        "it": "No",
+        "pt": "Não"
     },
     "saveDialogTitle": {
         "en": "We are almost done!",
-        "it": "Ci siamo quasi!"
+        "it": "Ci siamo quasi!",
+        "pt": "Estamos quase lá!"
     },
     "saveDialogTextfieldHint": {
         "en": "Dough name",
-        "it": "Nome impasto"
+        "it": "Nome impasto",
+        "pt": "Nome da massa"
     },
     "requiredField": {
         "en": "Required field",
-        "it": "Campo obbligatorio"
+        "it": "Campo obbligatorio",
+        "pt": "Campo obrigatório"
     },
     "save": {
         "en": "Save",
-        "it": "Salva"
+        "it": "Salva",
+        "pt": "Salvar"
     },
     "saveDialogSuccess": {
         "en": "Dough recipe saved",
-        "it": "Impasto salvato correttamente"
+        "it": "Impasto salvato correttamente",
+        "pt": "Receita de massa salva"
     },
     "deleteDialogTitle": {
         "en": "Are you sure?",
-        "it": "Sei sicuro?"
+        "it": "Sei sicuro?",
+        "pt": "Tem certeza?"
     },
     "deleteDialogMessage": {
         "en": "The saved dough recipe will be deleted.",
-        "it": "Questa operazione cancellerà l'impasto salvato."
+        "it": "Questa operazione cancellerà l'impasto salvato.",
+        "pt": "A receita de massa será excluída"
     },
     "cancel": {
         "en": "Cancel",
-        "it": "Annulla"
+        "it": "Annulla",
+        "pt": "Cancelar"
     },
     "ok": {
         "en": "Ok",
-        "it": "Ok"
+        "it": "Ok",
+        "pt": "Ok"
     },
     "deleteDialogSuccess": {
         "en": "Dough deleted",
-        "it": "Impasto eliminato correttamente"
+        "it": "Impasto eliminato correttamente",
+        "pt": "Massa excluída"
     },
     "savedDoughsTab": {
         "en": "Saved doughs",
-        "it": "Impasti salvati"
+        "it": "Impasti salvati",
+        "pt": "Massa salva"
     },
     "noDoughsSaved": {
         "en": "No doughs saved",
-        "it": "Nessun impasto salvato"
+        "it": "Nessun impasto salvato",
+        "pt": "Nenhuma massa salva"
     },
     "aboutTab": {
         "en": "About",
-        "it": "Info"
+        "it": "Info",
+        "pt": "Sobre"
     },
     "aboutTabDescription1": {
         "en": "Calcolapizza will allow you to calculate the exact amount for your pizza doughs in a few seconds and to save it for future use. This is a smartphone version of the homonymous tool by the forum",
-        "it": "Calcolapizza vi permetterà di calcolare in pochissimi secondi le dosi esatte per i vostri impasti e salvarle per poterle riutilizzare in seguito. Questa non è altro che una versione riadattata per smartphone dell'omonimo strumento ufficiale del forum"
+        "it": "Calcolapizza vi permetterà di calcolare in pochissimi secondi le dosi esatte per i vostri impasti e salvarle per poterle riutilizzare in seguito. Questa non è altro che una versione riadattata per smartphone dell'omonimo strumento ufficiale del forum",
+        "pt": "Calcolapizza lhe permitirá calcular a quantidade exata para a sua massa de pizza em alguns segundos e salvá-la para uso futuro. Esta é a versão para smartphone da ferramenta homônima do fórum"
     },
     "aboutTabDescription2": {
         "en": "all the credit goes to them",
-        "it": "ogni merito va a loro"
+        "it": "ogni merito va a loro",
+        "pt": "todos os créditos vão para"
     },
     "aboutTabDescription3": {
         "en": "This is an ad supported app, read the",
-        "it": "L'app è supportata da ads, leggi la"
+        "it": "L'app è supportata da ads, leggi la",
+        "pt": "Este app possui anúncios, leia"
     },
     "privacyPolicy": {
         "en": "Privacy Policy",
-        "it": "Normativa sulla privacy"
+        "it": "Normativa sulla privacy",
+        "pt": "Política de privacidade"
     },
     "appInfo": {
         "en": "App info",
-        "it": "Info sull'app"
+        "it": "Info sull'app",
+        "pt": "Informações sobre o app"
     },
     "version": {
         "en": "Version",
-        "it": "Versione"
+        "it": "Versione",
+        "pt": "Versão"
     },
     "author": {
         "en": "Author",
-        "it": "Autore"
+        "it": "Autore",
+        "pt": "Autor"
     },
     "contactMe": {
         "en": "Contact me",
-        "it": "Contattami"
+        "it": "Contattami",
+        "pt": "Contato"
     }
 }
