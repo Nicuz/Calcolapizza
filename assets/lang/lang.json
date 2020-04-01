@@ -218,5 +218,20 @@
         "en": "Contact me",
         "it": "Contattami",
         "pt": "Contato"
+    },
+    "settingsTitle": {
+        "en": "Settings",
+        "it": "Impostazioni",
+        "pt": "Configurações"
+    },
+    "darkMode": {
+        "en": "Dark Mode",
+        "it": "Tema scuro",
+        "pt": "Tema escuro"
+    },
+    "useFahrenheit": {
+        "en": "Use Fahrenheit degrees",
+        "it": "Usa gradi Fahrenheit",
+        "pt": "Use graus Fahrenheit"
     }
 }
