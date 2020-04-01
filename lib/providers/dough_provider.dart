@@ -21,6 +21,9 @@ class DoughDetailsProvider with ChangeNotifier {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
             title: Text(
                 AppLocalizations.of(context).translate("deleteDialogTitle")),
             content: Text(
@@ -31,7 +34,6 @@ class DoughDetailsProvider with ChangeNotifier {
                   AppLocalizations.of(context)
                       .translate("cancel")
                       .toUpperCase(),
-                  style: TextStyle(color: Colors.deepOrange),
                 ),
                 onPressed: () {
                   Navigator.of(context).pop();
@@ -40,7 +42,6 @@ class DoughDetailsProvider with ChangeNotifier {
               FlatButton(
                 child: Text(
                   AppLocalizations.of(context).translate("ok").toUpperCase(),
-                  style: TextStyle(color: Colors.deepOrange),
                 ),
                 onPressed: () {
                   Navigator.of(context).pop();
@@ -69,6 +70,9 @@ class DoughDetailsProvider with ChangeNotifier {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
             title:
                 Text(AppLocalizations.of(context).translate("saveDialogTitle")),
             content: Form(
@@ -90,7 +94,6 @@ class DoughDetailsProvider with ChangeNotifier {
                   AppLocalizations.of(context)
                       .translate("cancel")
                       .toUpperCase(),
-                  style: TextStyle(color: Colors.deepOrange),
                 ),
                 onPressed: () {
                   Navigator.of(context).pop();
@@ -99,7 +102,6 @@ class DoughDetailsProvider with ChangeNotifier {
               FlatButton(
                 child: Text(
                   AppLocalizations.of(context).translate("save").toUpperCase(),
-                  style: TextStyle(color: Colors.deepOrange),
                 ),
                 onPressed: () {
                   if (_formKey.currentState.validate()) {
@@ -115,26 +117,29 @@ class DoughDetailsProvider with ChangeNotifier {
         });
   }
 
-  void saveDough(Dough dough, BuildContext context) async {
-    await dbProvider.saveDough(dough);
+  void saveDough(Dough dough, BuildContext context) {
+    dbProvider.saveDough(dough);
     showFlushbar(context, Icons.check_box, Colors.teal,
         AppLocalizations.of(context).translate("saveDialogSuccess"), 3, 8);
   }
 
   void showFlushbar(BuildContext context, IconData icon, Color iconColor,
-      String text, int duration, double bottomPadding) {
+      String text, int duration, double bottomMargin) {
     Flushbar(
-      aroundPadding: EdgeInsets.fromLTRB(8, 8, 8, bottomPadding),
-      borderRadius: 8,
+      backgroundColor: Theme.of(context).accentColor,
       shouldIconPulse: false,
       icon: Icon(
         icon,
-        color: iconColor,
+        color: Colors.white,
       ),
-      messageText: Text(
-        text,
-        style: TextStyle(color: Colors.white),
+      messageText: Container(
+        margin: const EdgeInsets.symmetric(vertical: 15),
+        child: Text(
+          text,
+          style: TextStyle(color: Colors.white),
+        ),
       ),
+      forwardAnimationCurve: Curves.easeIn,
       duration: Duration(seconds: duration),
     ).show(context);
   }

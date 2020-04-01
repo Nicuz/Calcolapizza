@@ -14,7 +14,10 @@ class TitleTextField extends StatelessWidget {
       children: <Widget>[
         Text(title),
         Card(
-          elevation: 20,
+          elevation: 0,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          margin: EdgeInsets.symmetric(vertical: 5, horizontal: 0),
           child: Padding(
             padding: EdgeInsets.all(20.0),
             child: TextFormField(

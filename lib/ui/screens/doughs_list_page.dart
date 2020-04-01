@@ -1,11 +1,23 @@
+import 'package:animations/animations.dart';
 import 'package:calcolapizza/app_localizations.dart';
 import 'package:calcolapizza/models/dough.dart';
 import 'package:calcolapizza/providers/dough_provider.dart';
 import 'package:calcolapizza/ui/screens/dough_page.dart';
 import 'package:calcolapizza/ui/widgets/dough_card_detail.dart';
+import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:calcolapizza/enums.dart';
+
+extension on Widget {
+  Widget marginVertical(double value) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: value),
+      child: this,
+    );
+  }
+}
 
 class DoughsListPage extends StatelessWidget {
   @override
@@ -22,7 +34,14 @@ class DoughsListPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    Image.asset("assets/images/no_data_pizza.png"),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.5,
+                      child: FlareActor(
+                        "assets/images/no_data_pizza.flr",
+                        fit: BoxFit.cover,
+                        animation: "bounce",
+                      ),
+                    ),
                     Text(
                       AppLocalizations.of(context).translate("noDoughsSaved"),
                       style: TextStyle(
@@ -34,27 +53,24 @@ class DoughsListPage extends StatelessWidget {
                 )
               : Column(
                   children: <Widget>[
-                    SizedBox(height: 20),
                     Expanded(
                       child: ListView.builder(
                         physics: BouncingScrollPhysics(),
                         itemCount: snapshot.data.length,
                         itemBuilder: (BuildContext context, int index) {
                           Dough item = Dough.fromMap(snapshot.data[index]);
-                          return Container(
-                            margin: EdgeInsets.symmetric(horizontal: 20),
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        DoughPage(DoughPageMode.View, item),
-                                  ),
-                                );
-                              },
-                              child: Card(
-                                elevation: 20,
+                          return OpenContainer(
+                            openColor: Colors.transparent,
+                            openElevation: 0,
+                            closedColor: Colors.transparent,
+                            closedElevation: 0,
+                            transitionDuration: Duration(milliseconds: 350),
+                            closedBuilder:
+                                (BuildContext context, VoidCallback action) {
+                              return Card(
+                                elevation: 0,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20)),
                                 child: Padding(
                                   padding: const EdgeInsets.all(5.0),
                                   child: ListTile(
@@ -105,9 +121,18 @@ class DoughsListPage extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                              ),
-                            ),
-                          );
+                              );
+                            },
+                            openBuilder:
+                                (BuildContext context, VoidCallback action) =>
+                                    DoughPage(
+                                        DoughPageMode.view,
+                                        item.roomTemp >= 59
+                                            ? TempUnit.fahrenheit
+                                            : TempUnit.celsius,
+                                        item),
+                            tappable: true,
+                          ).marginVertical(5);
                         },
                       ),
                     )

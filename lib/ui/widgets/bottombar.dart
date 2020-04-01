@@ -4,6 +4,7 @@ import 'package:calcolapizza/providers/navigation_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:calcolapizza/ui/theme.dart';
 
 class BottomBar extends StatelessWidget {
   @override
@@ -12,51 +13,43 @@ class BottomBar extends StatelessWidget {
         Provider.of<NavigationProvider>(context);
 
     return Container(
-      margin: EdgeInsets.fromLTRB(8, 0, 8, 8),
       child: BubbleBottomBar(
+        backgroundColor: Theme.of(context).bottomAppBarColor,
         iconSize: 20,
         opacity: .2,
         currentIndex: navigationProvider.bottomBarIndex,
         onTap: (int index) {
           navigationProvider.setPage = index;
         },
-        borderRadius: BorderRadius.circular(10),
-        elevation: 8,
         items: <BubbleBottomBarItem>[
           BubbleBottomBarItem(
-              backgroundColor: Colors.deepOrange,
+              backgroundColor: AppTheme.bottombarActiveColor,
               icon: Icon(
                 FontAwesomeIcons.calculator,
-                color: Colors.grey,
+                color: AppTheme.bottombarInactiveColor,
               ),
               activeIcon: Icon(
                 FontAwesomeIcons.calculator,
-                color: Colors.deepOrange,
-              ),
-              title: Text("Calcolapizza")),
-          BubbleBottomBarItem(
-              backgroundColor: Colors.teal,
-              icon: Icon(
-                FontAwesomeIcons.pizzaSlice,
-                color: Colors.grey,
-              ),
-              activeIcon: Icon(
-                FontAwesomeIcons.pizzaSlice,
-                color: Colors.teal,
+                color: AppTheme.bottombarActiveColor,
               ),
               title: Text(
-                  AppLocalizations.of(context).translate("savedDoughsTab"))),
+                "Calcolapizza",
+                style: TextStyle(color: AppTheme.bottombarActiveColor),
+              )),
           BubbleBottomBarItem(
-              backgroundColor: Colors.amber,
+              backgroundColor: AppTheme.bottombarActiveColor,
               icon: Icon(
-                FontAwesomeIcons.infoCircle,
-                color: Colors.grey,
+                FontAwesomeIcons.pizzaSlice,
+                color: AppTheme.bottombarInactiveColor,
               ),
               activeIcon: Icon(
-                FontAwesomeIcons.infoCircle,
-                color: Colors.amber,
+                FontAwesomeIcons.pizzaSlice,
+                color: AppTheme.bottombarActiveColor,
               ),
-              title: Text(AppLocalizations.of(context).translate("aboutTab"))),
+              title: Text(
+                AppLocalizations.of(context).translate("savedDoughsTab"),
+                style: TextStyle(color: AppTheme.bottombarActiveColor),
+              )),
         ],
       ),
     );

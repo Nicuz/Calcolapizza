@@ -1,0 +1,1 @@
+{"_info":"// This is a generated file; do not edit or check into version control.","dependencyGraph":[{"name":"facebook_audience_network","dependencies":[]},{"name":"package_info","dependencies":[]},{"name":"path_provider","dependencies":[]},{"name":"share","dependencies":[]},{"name":"sqflite","dependencies":[]},{"name":"url_launcher","dependencies":[]}]}

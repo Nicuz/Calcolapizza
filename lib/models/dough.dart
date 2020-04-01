@@ -2,6 +2,13 @@ import 'dart:math';
 
 import 'package:calcolapizza/app_localizations.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:calcolapizza/enums.dart';
+
+extension on int {
+  int celsius(TempUnit tempUnit) {
+    return tempUnit == TempUnit.fahrenheit ? (this - 32) ~/ 1.8 : this;
+  }
+}
 
 class Dough {
   int _id;
@@ -19,17 +26,19 @@ class Dough {
   int _risingTime;
   int _fridgeRisingTime;
   int _isGrandmaPizza;
+  TempUnit tempUnit;
 
   Dough({
-    int doughsNumber,
-    int doughsWeight,
-    int hydration,
-    int saltPerLiter,
-    int fatsPerLiter,
-    int roomTemp,
-    int risingTime,
-    int fridgeRisingTime,
-    bool isGrandmaPizza,
+    @required int doughsNumber,
+    @required int doughsWeight,
+    @required int hydration,
+    @required int saltPerLiter,
+    @required int fatsPerLiter,
+    @required int roomTemp,
+    @required int risingTime,
+    @required int fridgeRisingTime,
+    @required bool isGrandmaPizza,
+    @required TempUnit tempUnit,
   }) {
     _doughsNumber = doughsNumber;
     _doughsWeight = doughsWeight;
@@ -46,9 +55,9 @@ class Dough {
 
     double n;
     if (isGrandmaPizza) {
-      n = roomTemp * (1 - 0.25 * 1);
+      n = roomTemp.celsius(tempUnit) * (1 - 0.25 * 1);
     } else {
-      n = roomTemp * (1 - 0.25 * 0);
+      n = roomTemp.celsius(tempUnit) * (1 - 0.25 * 0);
     }
 
     double h = 2250 *
