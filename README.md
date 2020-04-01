@@ -33,7 +33,8 @@ Check [this video](https://youtu.be/z2u1RRPu2AA) for the entire process and some
 Currently only English and Italian are supported, if you want to submit a new translation you have to:
 1. add strings in [lang.json](assets/lang/lang.json), use the language code as key.
 2. add new Locale in supportedLocales in [main.dart](lib/main.dart)
-3. add language code in [Info.plist](ios/Runner/Info.plist)
+3. add language code in [app_localizations.dart](lib/app_localizations.dart)
+4. add language code in [Info.plist](ios/Runner/Info.plist)
 
 If you want to improve an existing translation you just need to follow the step 1.
 
