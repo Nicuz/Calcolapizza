@@ -40,7 +40,7 @@ class _AppLocalizationsDelegate
     extends LocalizationsDelegate<AppLocalizations> {
   // This delegate instance will never change (it doesn't even have fields!)
   // It can provide a constant constructor.
-  static const List<String> _supportedLocales = ["en", "it", "pt","de"];
+  static const List<String> _supportedLocales = ["en", "it", "pt", "de", "es"];
 
   const _AppLocalizationsDelegate();
 
